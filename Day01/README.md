@@ -27,6 +27,50 @@
 1. General purpose: General pupose instances provide a balanced combination of compute, memory and networking resources and can be userd for vaiety of workloads.
 
 Two types of genral purpose instances: T and M
-T- t2, t3, t4g
-M- M5, M6i,M7g
+* T- t2, t3, t4g
+* M- M5, M6i,M7g
 
+2. Compute optimized: Compute optimized instances design for that require high CPU performance.
+* C5,C6i,C7g
+
+3. Memory Optimized: Memory Optimized designed for workload that require large amounts of RAM to process data quickly.
+* R5, R6i, R7g, X2idn
+
+4. Storage Optimized: Storage Optimized instances are design for workload that require High speed access tolarge amount of data store localy in a disk.
+* I3, I4i, D3, D3en
+
+5. Accelrated Computing Instances: Accelerated Computing instances use specialized hardware accelerators such as GPUs, FPGAs, or AI chips to perform tasks much faster than a standard CPU.
+* P- Series: P4d, P5
+* G-Series: G4dn, G5
+* FPGA(F-series) - F1
+FPGA- field programmable gate array
+
+
+## EC2 Instance Pricing Models
+
+
+O-R-S-S-D-D
+
+O → On-Demand
+R → Reserved
+S → Savings Plans
+S → Spot
+D → Dedicated Instances
+D → Dedicated Hosts
+
+1. On-Demand Pricing models:
+
+* AWS EC2 offers six primary pricing models: On-Demand, Reserved Instances, Savings Plans, Spot Instances, Dedicated Instances, and Dedicated Hosts. On-Demand provides flexibility, Reserved Instances and Savings Plans offer discounted long-term pricing, Spot Instances use spare AWS capacity at very low cost, and Dedicated options provide hardware isolation for compliance and licensing requirements.
+
+
+### Which EC2 pricing option is the cheapest?
+
+Spot Instances are typically the cheapest, offering discounts of up to about 90% compared to On-Demand pricing, but they can be interrupted by AWS.
+
+### Which pricing option is best for production workloads?
+
+Reserved Instances or Savings Plans, because they provide significant cost savings for long-term, predictable usage.
+
+### Which pricing option is best for Dev/Test?
+
+On-Demand Instances, because they require no commitment and are easy to start and stop.
